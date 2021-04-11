@@ -24,15 +24,15 @@ export default function SignIn() {
 		}
 	}
 	return (
-		<div>
+		<div className={classes.signin}>
 			<div>
 				Dont Have An Account. <Link to="/signup">Sign Up</Link>
 			</div>
 			{error}
-			<form>
+			<form onSubmit={handleSubmit}>
 				<input type="email" placeholder="email" required ref={emailRef} />
 				<input type="password" placeholder="password" required ref={passRef} />
-				<button disabled={loading} onClick={handleSubmit}>
+				<button disabled={loading} type="submit">
 					SignIn
 				</button>
 				<p>

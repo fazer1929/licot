@@ -6,14 +6,10 @@ export default function Retreat({ expType, venue, price, date, image, title }) {
 			<div className={classes.rtHeader}>
 				<img src={image} className={classes.rtImage} />
 				<div className={classes.rtDetails}>
-					<div className={classes.rtVenue}>
-						<p>{expType} Experience</p>
-						<p>{venue}</p>
-					</div>
-					<div className={classes.rtPrice}>Rs.{price.toString()}/-</div>
-					<div className={classes.rtDate}>{date}</div>
+	
+			
 					<div className={classes.rtBook}>
-						<button className={classes.rtBookBtn}>Book Your Seat</button>
+						<button className={classes.rtBookBtn}>Search Doctor</button>
 					</div>
 				</div>
 			</div>

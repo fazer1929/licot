@@ -9,7 +9,7 @@ export default function Footer() {
 		<div className={classes.footer}>
 			<div className={classes.footerTop}>
 				<div className={classes.left}>
-					<Link> Sand and Sea </Link>
+					<Link to="/"> Licot </Link>
 				</div>
 				<div className={classes.center}>
 					<input type="email" placeholder="Email" />
@@ -64,22 +64,15 @@ export default function Footer() {
 					</ul>
 				</div>
 				<div className={classes.center}>
-					<h3>Categories</h3>
-					<ul>
-						<li>NATURAL HEALTH CARE</li>
-						<li>AYURVEDIC MEDICINE</li>
-						<li>HERBAL HOME CARE</li>
-						<li>NATURAL PERSONAL CARE</li>
-						<li>FIT INDIA CATEGORY</li>
-					</ul>
+
 				</div>
 				<div className={classes.right}>
 					<h3>Get In Touch</h3>
 					<p>
-						<a href="mailto:sandsea@gmail.com">Email : sand&sea@gmail.com</a>{" "}
+						<a href="mailto:licot@gmail.com">Email : licot@gmail.com</a>{" "}
 					</p>
 					<p>
-						Sand & Sea Limited
+						Licot Limited
 						<br />
 						New Delhi, India - 110001
 						<br />
@@ -89,7 +82,7 @@ export default function Footer() {
 			</div>
 			<hr />
 			<div className={classes.footerBottom}>
-				<p>Copyright © 2021 Internship</p>
+				<p>Copyright © 2021 Licot</p>
 			</div>
 		</div>
 	);

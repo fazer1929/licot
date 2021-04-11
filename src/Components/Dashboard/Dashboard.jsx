@@ -6,6 +6,7 @@ import ProfileLogo from '../../assets/logo/user.png';
 import {db} from '../../firebase'
 ;function Dashboard() {
 	const { currentUser, signout } = useAuth();
+	const [fullname,setFullname] = useState('');
 	const [user,setUser] = useState(0);
 	const history = useHistory();
 	function logout() {
@@ -20,6 +21,7 @@ import {db} from '../../firebase'
 	useEffect(() => {
 if(currentUser){
 	db.collection("profiles").doc(currentUser.uid).onSnapshot(function (doc){
+		setFullname(doc?.data()?.fullname)
 		doc?.data()?.id == 1 ? setUser(1) : setUser(2);
 	})
 }
@@ -32,7 +34,7 @@ if(currentUser){
 					<img src={ProfileLogo} alt="profile logo"/>
 				</div>
 				<div className={classes.dashboardTopRight}>
-					<p>Name : Full Name</p>
+					<p>Name : {fullname}</p>
 				<p>Email: {currentUser.email}</p>
 			<button onClick={logout}>LogOut</button>
 				</div>

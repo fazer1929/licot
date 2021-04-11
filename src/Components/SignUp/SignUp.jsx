@@ -31,7 +31,7 @@ function SignUp() {
 		}
 	}
 	return (
-		<div>
+		<div className={classes.signup}>
 			<div>
 				Already Have An Account?<Link to="/signin"> Sign In.</Link>
 			</div>

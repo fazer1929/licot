@@ -1,0 +1,123 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	min-height: 100px;
+	text-align: center;
+	color: blanchedalmond;
+	background-color: #212120;
+}
+
+// Footer Top Styling Start
+.footerTop {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 20px 10px 10px 10px;
+	text-align: center;
+	justify-content: center;
+	color: blanchedalmond;
+	background-color: #212120;
+}
+
+// Footer Top and Middle div Styling Start
+.left {
+	width: 30%;
+	margin: 10px;
+}
+.left a {
+	text-decoration: none;
+	color: blanchedalmond;
+}
+.center {
+	width: 30%;
+	margin: 10px;
+}
+.center input {
+	padding: 5px;
+	width: 80%;
+	background-color: #212120;
+	color: blanchedalmond;
+	border: 1px solid blanchedalmond;
+}
+
+.right {
+	width: 30%;
+	margin: 10px;
+}
+.footerTop .right span {
+	margin: 8px;
+}
+.footerTop .right a {
+	text-decoration: none;
+	color: blanchedalmond;
+}
+
+// Footer Top and Middle div Styling End
+// Footer Top Styling End
+
+// Footer Middle Styling Start
+
+.footerMiddle {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 10%;
+	text-align: left;
+	justify-content: center;
+	color: blanchedalmond;
+	background-color: #212120;
+}
+
+.footerMiddle h3 {
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+.footerMiddle ul {
+	list-style: none;
+}
+.footerMiddle a {
+	text-decoration: none;
+	color: blanchedalmond;
+}
+
+// Footer Middle Styling End
+
+// Footer Bottom Styling Start
+
+.footerBottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 15px;
+}
+
+// Footer Hr
+.footer hr {
+	background-color: blanchedalmond;
+	width: 80%;
+	align-self: center;
+	opacity: 0.5;
+	height: 0.5px;
+	margin: 15px;
+}
+
+// Footer Bottom Styling End
+
+// Media Query Start for width size 750px
+@media only screen and (max-width: 750px) {
+	.left {
+		width: 85%;
+		margin: 10px;
+	}
+	.center {
+		width: 85%;
+		margin: 10px;
+	}
+	.right {
+		width: 85%;
+		margin: 10px;
+	}
+}
+
+// Media Query End

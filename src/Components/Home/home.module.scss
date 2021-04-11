@@ -1,0 +1,22 @@
+.content {
+	color: green;
+	text-align: center;
+	.slider {
+		width: 100%;
+	}
+	.upcoming {
+		.upcomingHeading {
+			color: #2ecc71;
+			margin-top: 50px;
+		}
+	}
+	.retreats {
+		width: 90%;
+		margin: 40px auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+}

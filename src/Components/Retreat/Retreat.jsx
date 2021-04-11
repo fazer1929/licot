@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Retreat.module.scss";
-export default function Retreat({ expType, venue, price, date, image, title }) {
+export default function Retreat({ topic, image, title }) {
 	return (
 		<div className={classes.retreat}>
 			<div className={classes.rtHeader}>
@@ -9,7 +9,7 @@ export default function Retreat({ expType, venue, price, date, image, title }) {
 	
 			
 					<div className={classes.rtBook}>
-						<button className={classes.rtBookBtn}>Search Doctor</button>
+						<button className={classes.rtBookBtn}>{topic}</button>
 					</div>
 				</div>
 			</div>

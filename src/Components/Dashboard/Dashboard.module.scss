@@ -1,0 +1,72 @@
+.dashboard{
+    display: flex;
+    flex-direction: column;
+}
+.dashboardTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dashboardTopLeft{
+    margin: 10px;
+    width: 45%;
+    text-align: right;
+}
+
+.dashboardTopLeft img{
+    height: 100px;
+    
+}
+.dashboardTopRight {
+    margin: 10px;
+
+}
+// Dashboard Bottom Styling start
+.dashboardBottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dashboardBottomLeft {
+    margin: 10px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid black;
+
+ 
+}
+.dashboardBottomRight {
+    margin: 10px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid black;
+
+}
+.dashboardBottomRight ul{
+    list-style: none;
+}
+
+@media only screen and (max-width: 750px){
+    .dashboardTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dashboardTopLeft {
+        margin: 10px;
+        text-align: center;
+    
+    }
+    .dashboardTopRight {
+        margin: 10px;
+    text-align: center;
+    }
+
+    .dashboardBottomLeft{
+        width: 86%;
+    }
+    .dashboardBottomRight{
+        width: 86%;
+    }
+}

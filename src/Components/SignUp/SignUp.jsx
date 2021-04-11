@@ -7,7 +7,10 @@ function SignUp() {
 	const { signup } = useAuth();
 	const emailRef = useRef();
 	const passRef = useRef();
+	const fullnameRef = useRef();
+	const [id,setId] = useState('');
 	const history = useHistory();
+
 
 	const passConfirmRef = useRef();
 	function handleSubmit(e) {
@@ -18,7 +21,7 @@ function SignUp() {
 		try {
 			setError("");
 			setLoading(true);
-			signup(emailRef.current.value, passRef.current.value);
+			signup(emailRef.current.value, passRef.current.value, fullnameRef.current.value, id);
 			setLoading(false);
 			history.push("/");
 		} catch {
@@ -32,7 +35,8 @@ function SignUp() {
 				Already Have An Account?<Link to="/signin"> Sign In.</Link>
 			</div>
 			{error}
-			<form>
+			<form onSubmit={handleSubmit}>
+			<input type="text" placeholder="Full Name" required ref={fullnameRef} />
 				<input type="email" placeholder="email" required ref={emailRef} />
 				<input type="password" placeholder="password" required ref={passRef} />
 				<input
@@ -41,7 +45,9 @@ function SignUp() {
 					required
 					ref={passConfirmRef}
 				/>
-				<button disabled={loading} onClick={handleSubmit}>
+				<input type="radio" id="doctor" name="identity" value={1} onChange={(e)=>setId(e.target.value)} required/><label htmlFor="doctor">Doctor</label>
+				<input type="radio" id="patient" name="identity" value={2} onChange={(e)=>setId(e.target.value)}/><label htmlFor="patient">Patient</label>
+				<button disabled={loading} type="submit">
 					SignUp
 				</button>
 			</form>

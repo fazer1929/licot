@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import classes from "./home.module.scss";
-import SliderComponent from "./SliderComponent";
-import Header from "./Header";
-import Retreat from "./Retreat";
+import SliderComponent from "../Slider/SliderComponent";
+import Retreat from "../Retreat/Retreat";
 // Example Data For The Retreats
 const data = [
 	{
@@ -62,7 +61,6 @@ const Home = () => {
 					<SliderComponent />
 				</div>
 				{/* Containes The Header(NavBar) Could Be put in App.js For differen Style */}
-				<Header />
 				<div className={classes.upcoming}>
 					<h1 className={classes.upcomingHeading}>Upcoming Retreats</h1>
 					<div className={classes.retreats}>

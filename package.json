@@ -8,14 +8,11 @@
     "@testing-library/user-event": "^12.6.2",
     "aes-js": "^3.1.2",
     "firebase": "^8.2.4",
-<<<<<<< HEAD
-    "node-sass": "^5.0.0",
-=======
     "node-sass": "^4.14.1",
->>>>>>> d999b76786171466d8539cc4902163c8e3f60a84
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
+    "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

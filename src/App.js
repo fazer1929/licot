@@ -7,12 +7,15 @@ import PrivateRoute from "./PrivateRoute";
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
+
+import HomePage from './Components/Home/home';
 function App() {
 	return (
 		<Router>
 			<Header/>
 			<Switch>
-				<PrivateRoute exact path="/" component={Dashboard} />
+				<Route exact path="/" component={HomePage} />
+				<PrivateRoute exact path="/profile" component={Dashboard} />
 				<Route path="/signup" component={SignUp} />
 				<Route path="/signin" component={SignIn} />
 				<Route path="/forgot-password" component={ForgotPassword} />

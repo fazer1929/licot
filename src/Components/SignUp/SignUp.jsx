@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import classes from './SignUp.module.scss';
 import { useAuth } from "../../AuthContext";
 import { useHistory, Link } from "react-router-dom";
 function SignUp() {

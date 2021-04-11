@@ -1,11 +1,18 @@
-# Getting Started with Create React App
+# Licot - All in one app for your medical needs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web app that lets you see docotrs near you, book apointments, and consult them online.
+It also keeps track of you medicines and reminds you when there's a need for a refil.'
 
-## Available Scripts
+## How to run code
 
-In the project directory, you can run:
-
+Clone the projcet
+and enter follwoing commands - 
+```
+cd licot
+npm i
+npm start
+```
+This will install all the dependencies and run the app in yyour local enviornment.
 ### `npm start`
 
 Runs the app in the development mode.\

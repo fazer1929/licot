@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Header.module.scss";
 import { AiOutlineBars } from "react-icons/ai";
-import logo from "../assets/logo.jpg";
 export default function Header() {
 	const navRightRef = useRef();
 	const [navOpen, setNavOpen] = useState(false);
@@ -16,7 +15,7 @@ export default function Header() {
 		<div className={classes.header}>
 			<nav className={classes.navbar}>
 				<div className={classes.navbarLeft}>
-					<img src={logo} alt="Sand&Sea" />
+					logo
 				</div>
 				<div ref={navRightRef} className={classes.navbarRight}>
 					<Link to="/" className={classes.navLink}>
